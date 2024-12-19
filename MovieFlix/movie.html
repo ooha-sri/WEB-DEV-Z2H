@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Stream Time</title>
+</head>
+<body id="streamPage">
+    <!-- Video Section (Initially visible) -->
+    <div class="video-popup" id="videoPopup">
+        <div class="video-container">
+            <video id="introVideo" autoplay muted>
+                <source src="images/STREAM.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+    <!-- Main Webpage Section (Hidden initially) -->
+    <div class="main-content" id="mainContent" style="display: none;">
+        <!-- Navbar -->
+        <div class="navbar" id="navbar">
+            <div class="navbar-container">
+                <div class="logo-container">
+                    <h2>STREAM TIME</h2>
+                </div>
+                <div class="menu-container">
+                    <ul class="menu-list">
+                        <li class="menu-list-item menu-list-item-active">Home</li>
+                        <li class="menu-list-item">Movies</li>
+                        <li class="menu-list-item">Series</li>
+                        <li class="menu-list-item">New & Popular</li>
+                        <li class="menu-list-item">My List</li>
+                    </ul>
+                </div>
+                <div class="profile-container">
+                    <img class="profile-picture" src="images/profile.jpg" alt="User Profile Picture">
+                    <div class="dropdown" id="dropdownMenu">
+                        <ul>
+                            <li>Account</li>
+                            <li>Settings</li>
+                            <li>Logout</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hero Section -->
+        <div class="hero-section" id="heroSection">
+            <div class="hero-content">
+                <h1>Unlimited Movies, TV Shows, and More.</h1>
+                <p>Watch anywhere. Cancel anytime.</p>
+                <button class="hero-button" id="watchNowBtn">Watch Now</button>
+            </div>
+        </div>
+
+        <!-- Trending Now Section -->
+        <div class="carousel" id="carouselSection" style="display: block;">
+            <h2>Trending Now</h2>
+            <div class="carousel-container">
+                <button class="prev-btn" id="prevBtn">&#8249;</button>
+                <div class="carousel-items">
+                    <img src="images/img1.jpeg" alt="Movie 1">
+                    <img src="images/img2.jpeg" alt="Movie 2">
+                    <img src="images/img3.jpg" alt="Movie 3">
+                    <img src="images/img4.avif" alt="Movie 4">
+                    <img src="images/img5.jpg" alt="Movie 5">
+                    <img src="images/img6.jpeg" alt="Movie 6">
+                    <img src="images/img7.jpg" alt="Movie 7">
+                    <img src="images/img8.jpg" alt="Movie 8">
+                    <img src="images/img9.jpg" alt="Movie 9">
+                    <img src="images/img10.jpg" alt="Movie 10">
+                </div>
+                <button class="next-btn" id="nextBtn">&#8250;</button>
+            </div>
+        </div>
+
+        <!-- Only on Stream Time Section -->
+        <div class="carousel" id="exclusiveCarouselSection" style="display: block;">
+            <h2>Only on Stream Time</h2>
+            <div class="carousel-container">
+                <button class="prev-btn">&#8249;</button>
+                <div class="carousel-items">
+                    <img src="images/img11.jpeg" alt="Movie 11">
+                    <img src="images/img12.jpg" alt="Movie 12">
+                    <img src="images/img13.jpg" alt="Movie 13">
+                    <img src="images/img14.jpg" alt="Movie 14">
+                    <img src="images/img15.jpg" alt="Movie 15">
+                    <img src="images/img16.jpg" alt="Movie 16">
+                    <img src="images/img17.jpg" alt="Movie 17">
+                    <img src="images/img18.jpg" alt="Movie 18">
+                    <img src="images/img19.jpg" alt="Movie 19">
+                    <img src="images/img20.jpeg" alt="Movie 20">
+                </div>
+                <button class="next-btn">&#8250;</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
